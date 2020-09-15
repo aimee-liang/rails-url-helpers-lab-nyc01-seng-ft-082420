@@ -1,1 +1,9 @@
 <h1><%= @student.to_s %></h1>
+
+<%# conditional statement to show on webpage whether student is active %>
+
+<% if @student.active %>
+    This student is currently active.
+<% else %>
+    This student is currently inactive.
+<% end %>
